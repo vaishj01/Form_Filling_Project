@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medical Insurance Form</h1>
+        <div class="auth-links">
+            <a href="login.html">Login</a> | <a href="signup.html">Signup</a>
+        </div>
+    </header>
+    <main>
+        <form id="insurance-form">
+            <!-- Include the fields for medical insurance form -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+            <label for="insurance-plan">Insurance Plan:</label>
+            <select id="insurance-plan" name="insurance-plan" required>
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+            </select>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

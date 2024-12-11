@@ -1,0 +1,218 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f0f8ff, #e6e6fa);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-links a:hover {
+    color: #ffd700;
+}
+
+/* Form Heading */
+.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    border-left: 4px solid #4caf50;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+button.voice-icon {
+    background: #ffd700;
+    color: #333;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+button.voice-icon:hover {
+    background: #ffcc00;
+}
+
+/* Digital Signature Section */
+canvas {
+    display: block;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: crosshair;
+}
+
+#clearSignature {
+    background: #f44336;
+}
+
+#clearSignature:hover {
+    background: #e53935;
+}
+
+/* Add Applicant Button */
+button[type="button"] {
+    width: 100%;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button[type="button"]:hover {
+    background: #0056b3;
+}
+
+/* Submit and Reset Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background: #4caf50;
+    font-weight: bold;
+    flex: 1;
+    margin-right: 10px;
+}
+
+button[type="reset"] {
+    background: #f44336;
+    font-weight: bold;
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-actions button {
+        margin: 5px 0;
+    }
+}
